@@ -8,7 +8,7 @@ These scripts were generated in R and RStudio (Version 1.4.1717). Required packa
 Installation of the package and loading the data should only take several minutes. 
 
 # How to use
-You should copy both the .Rmd file and the data files to an R project, or you can import the data fcan run each script separately with the data provided (Kootker et al. 2020), or use your own dataset.
+You should copy both the .Rmd file and the data files to an R project if you want to reproduce the figures. Otherwise, browse the Rmd file and see what is of reuse to you :)
 
 ## Output / Figures 1 and 2
 Examples of the resulting images are found in the "Images" directory.
