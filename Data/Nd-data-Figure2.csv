@@ -1,0 +1,34 @@
+Sample_Reference;Individual Reference in Paper;Site;Country;87Sr/86Sr;SD;143Nd/144Nd;SD;?Nd 
+2;2-A20;Warmenhuizen;The Netherlands;0,709267;7;0,512091;37;-10,7
+3;3-A24;Amsterdam;The Netherlands;0,709378;7;0,512193;29;-8,7
+6;6-A10;Amsterdam;The Netherlands;0,709315;6;0,512175;32;-9,0
+7;7-A13;Amsterdam;The Netherlands;0,709409;9;0,512098;59;-10,5
+8;8-A27;Alkmaar;The Netherlands;0,709367;7;0,512185;188;-8,8
+10;10-A18;Amsterdam;The Netherlands;0,709584;6;0,512288;119;-6,8
+11;11-A15;Amsterdam;The Netherlands;0,709441;4;0,512589;80;-1,0
+12;12-A9;Amsterdam;The Netherlands;0,709231;4;0,512330;124;-6,0
+13;28-R14a;Dordrecht;The Netherlands;0,709153;6;0,512388;32;-4,9
+14;29-R11;Rotterdam;The Netherlands;0,709375;11;0,512080;29;-10,9
+15;30-R13;Rotterdam;The Netherlands;0,709409;9;0,511869;28;-15,0
+19;34-R5;Rotterdam;The Netherlands;0,709061;8;0,511987;105;-12,7
+20;35-R9;Rotterdam;The Netherlands;0,709821;9;0,512020;166;-12,1
+21;36-F1;Lippenhuizen;The Netherlands;0,709432;9;0,511959;30;-13,2
+22;37-F3;Holwerd;The Netherlands;0,709619;9;0,511938;130;-13,7
+23;38-F4;Leeuwarden;The Netherlands;0,708934;1;0,512011;94;-12,2
+24;39-F8;Leeuwarden;The Netherlands;0,709469;7;0,511820;107;-16,0
+25;40-F11;Leeuwarden;The Netherlands;0,709230;9;0,512046;63;-11,5
+26;41-F12;Oldeboorn;The Netherlands;0,709122;9;0,512048;35;-11,5
+27;42-F13;Leeuwarden;The Netherlands;0,709337;9;0,511928;60;-13,8
+28;43-R6;Maastricht;The Netherlands;0,708942;7;0,511999;29;-12,5
+29;44-M4;Maastricht;The Netherlands;0,709596;7;0,511820;49;-16,0
+30;45-M5;Maastricht;The Netherlands;0,709644;1;0,511973;56;-13,0
+31;47-M14;Maastricht;The Netherlands;0,709546;1;0,511880;117;-14,8
+32;48-ZH1;Heerlen;The Netherlands;0,709424;8;0,511916;112;-14,1
+33;49-ZH3;Heerlen;The Netherlands;0,709319;9;0,512061;64;-11,3
+34;50-ZH4;Heerlen;The Netherlands;0,709169;9;0,512075;80;-11,0
+35;51-ZH9;Vaals;The Netherlands;0,709862;8;0,511924;50;-13,9
+36;W1-Gr;St. George's;Grenada;0,707841;9;0,512773;30;2,6
+37;W2-R8;Willemstad;Curacao;0,709375;1;0,512131;43;-9,9
+38;W3-B4;Kralendijk;Bonaire;0,709256;9;0,512127;38;-10,0
+39;W4-B16;Cucuta;Columbia;0,711749;9;0,512043;142;-11,6
+40;W5-I;Reykjavik;Iceland;0,708740;9;0,511889;29;-14,6
