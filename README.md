@@ -30,3 +30,5 @@ Plomp, E. and Peterson, J. C., 2020 IsoMAPNL, v1.0.0, Zenodo, https://doi.org/10
 # Related References 
 ## Article: 
 In prep. 
+## Dataset: 
+E. Plomp, Neodymium isotopes in modern human dental enamel: an exploratory dataset, (2021). https://doi.org/10.48530/ISOARCH.2021.011.
