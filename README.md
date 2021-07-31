@@ -3,7 +3,7 @@ Data and code underlying the figures of the article 'Neodymium isotopes in moder
 
 
 # Installation
-These scripts were generated in R and RStudio (Version 1.4.1717). Required packages: tidyverse and repmis.
+These scripts were generated in R and RStudio (Version 1.4.1717). Required packages: tidyverse.
 
 Installation of the package and loading the data should only take several minutes. 
 
