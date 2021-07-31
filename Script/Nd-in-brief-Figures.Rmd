@@ -1,0 +1,91 @@
+---
+title: "Nd-in-brief-Figures"
+author: "Esther Plomp & Joshua Peterson"
+date: "31-7-2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Credit
+These scripts were built upon code made available by Chris Stantis: 
+Chris Stantis. (2021). stantis/IsoDataVis: First (Official) Release (v1.2). Zenodo.https://doi.org/10.5281/zenodo.4743735
+
+You are free to reuse these scripts using a CC-BY/MIT license.
+
+Plomp E., Peterson J.C. (2021). Figures-Nd-data (version 1.0.0).https://github.com/EstherPlomp/Figures-Nd-data (check the CITATION.CFF file in the repository for the DOI)
+
+
+## Dependencies
+
+```{r, warning=FALSE}
+library("tidyverse")
+```
+
+## Import data Figure 1
+Copy the .csv dataset from the GitHub repro (https://github.com/EstherPlomp/Figures-Nd-data/blob/main/Data/Nd-data-Figure1.csv)
+
+```{r data Figure 1}
+Figure1 = read.csv("Nd-data-Figure1.csv", sep = ";" , row.names = NULL)
+Figure1$X143Nd.144Nd = as.numeric(gsub(",", ".", gsub("\\.", "", Figure1$X143Nd.144Nd))) #Remove commas so that it can be read as a number
+Figure1$SD = as.numeric(gsub(",", ".", gsub("\\.", "", Figure1$SD))) #Remove commas so that it can be read as a number
+Figure1$SDmin <- Figure1$X143Nd.144Nd - Figure1$SD #Add the minimum value for the error bars based on SD
+Figure1$SDmax <- Figure1$X143Nd.144Nd + Figure1$SD #Add the max value for the error bars based on SD
+```
+
+## Figure 1
+
+```{r}
+ggplot(Figure1) +
+  geom_errorbar(aes(x= Sample_Reference, ymin = SDmin, ymax = SDmax, width = 0.2)) +
+  geom_point(aes(x= Sample_Reference, y=X143Nd.144Nd, shape=Country, color=Country), size = 4) + 
+    theme_classic() +
+  scale_shape_manual(values=c(15, 16, 17, 18, 19, 17)) +
+  scale_color_manual(values = c("#f9d90f", "#c81025", "#002a7b", "#00765b", "#9e12a7", "#e98a2e")) +
+  theme(
+    legend.position = c(0.1, 0.8), 
+    legend.background = element_rect(size = 0.5, linetype="solid", colour ="grey"))+ 
+  ggtitle("Neodymium ratios") +
+  theme(plot.title = element_text(size=22, hjust = 0.5))+
+  labs(
+    x = "Individuals",
+    y = expression(paste(""^143, "Nd/", ""^144, "Nd" )),
+  ) 
+```
+
+
+## Import data Figure 2
+
+```{r}
+Figure2 = read.csv("Nd-data-Figure2.csv", sep = ";" , row.names = NULL)
+Figure2$X143Nd.144Nd = as.numeric(gsub(",", ".", gsub("\\.", "", Figure2$X143Nd.144Nd))) 
+Figure2$X87Sr.86Sr = as.numeric(gsub(",", ".", gsub("\\.", "", Figure2$X87Sr.86Sr))) 
+```
+
+## Figure 2
+Copy the .csv dataset from the GitHub repro (https://github.com/EstherPlomp/Figures-Nd-data/blob/main/Data/Nd-data-Figure2.csv)
+
+```{r}
+ggplot(Figure2) +
+  geom_point(aes(x=X87Sr.86Sr, y=X143Nd.144Nd, shape=Country, color=Country), size = 4) + 
+  theme_classic() +
+  xlim(0.7078,0.7119)+
+  scale_shape_manual(values=c(15, 16, 17, 18, 19, 17)) +
+  scale_color_manual(values = c("#f9d90f", "#c81025", "#002a7b", "#00765b", "#9e12a7", "#e98a2e")) +
+  theme(
+    legend.position = c(0.8, 0.7), 
+    legend.background = element_rect(size = 0.5, linetype="solid", colour ="grey")
+  ) +
+  ggtitle("Neodymium and strontium ratios") +
+  theme(plot.title = element_text(size=22, hjust = 0.5))+ #center title
+  labs(
+    x = expression(paste(""^87, "Sr/", ""^86, "Sr" )),
+    y = expression(paste(""^143, "Nd/", ""^144, "Nd" ))
+  ) 
+
+```
+
+
