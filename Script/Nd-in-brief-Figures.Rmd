@@ -43,6 +43,7 @@ ggplot(Figure1) +
   geom_errorbar(aes(x= Sample_Reference, ymin = SDmin, ymax = SDmax, width = 0.2)) +
   geom_point(aes(x= Sample_Reference, y=X143Nd.144Nd, shape=Country, color=Country), size = 4) + 
     theme_classic() +
+  scale_x_continuous(breaks=seq(0,40,5)) +
   scale_shape_manual(values=c(15, 16, 17, 18, 19, 17)) +
   scale_color_manual(values = c("#f9d90f", "#c81025", "#002a7b", "#00765b", "#9e12a7", "#e98a2e")) +
   theme(
@@ -51,7 +52,7 @@ ggplot(Figure1) +
   ggtitle("Neodymium ratios") +
   theme(plot.title = element_text(size=22, hjust = 0.5))+
   labs(
-    x = "Individuals",
+    x = "Individuals sorted on Sample Reference (Table 1)",
     y = expression(paste(""^143, "Nd/", ""^144, "Nd" )),
   ) 
 ```
