@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/391391506.svg)](https://zenodo.org/badge/latestdoi/391391506)
+
+
 # Figures-Nd-data
 Data and code underlying the figures of the article 'Neodymium isotopes in modern human dental enamel: an exploratory dataset for human provenancing'
 
