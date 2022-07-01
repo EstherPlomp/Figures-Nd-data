@@ -36,6 +36,6 @@ See the CITATION.cff file or
 
 # Related References 
 ## Article: 
-In prep. 
+E. Plomp, Neodymium isotopes in modern human dental enamel: An exploratory dataset for human provenancing, (2021).  https://doi.org/10.1016/j.dib.2021.107375
 ## Dataset: 
 E. Plomp, Neodymium isotopes in modern human dental enamel: an exploratory dataset, (2021). https://doi.org/10.48530/ISOARCH.2021.011.
